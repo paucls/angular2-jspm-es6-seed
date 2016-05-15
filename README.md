@@ -27,9 +27,3 @@ To build the application run the command below
 
 This will create a dist folder with the minified distribution files. To run open dist/index.html in a browser
 
-### Sourcemaps
-
-To include sourcemaps in the build run the command below
-
-    gulp dist --maps
-
