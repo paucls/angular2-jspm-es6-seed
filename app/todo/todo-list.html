@@ -1,0 +1,18 @@
+<div>
+    <form #itemForm="ngForm" (ngSubmit)="create(item)">
+        <md-input placeholder="Add Item"
+                  [(ngModel)]="item">
+        </md-input>
+    </form>
+    <md-list>
+        <md-list-item class="secondary-button-padding"
+                      *ngFor="let item of items">
+
+            <p>{{item.name}}</p>
+            <button md-button
+                    (click)="remove(item)">Delete
+            </button>
+            <md-divider></md-divider>
+        </md-list-item>
+    </md-list>
+</div>

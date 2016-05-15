@@ -5,12 +5,15 @@ import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
 
 import {TrNav} from './navbar/navbar.component.ts';
+import {TrTodoList} from './todo/todo.component.ts';
 
 //create a simple angular component
 @Component({
     selector: 'test-app',
-    directives: [TrNav],
-    template: '<tr-nav></tr-nav>'
+    directives: [TrNav, TrTodoList],
+    template: `<tr-nav></tr-nav>
+               <br/>
+               <tr-todo-list></tr-todo-list>`
 })
 class TestApp {
 
