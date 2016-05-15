@@ -4,7 +4,7 @@ import 'rxjs';
 import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
 
-import {TrNav} from 'app/navbar/navbar.component';
+import {TrNav} from './navbar/navbar.component.ts';
 
 //create a simple angular component
 @Component({

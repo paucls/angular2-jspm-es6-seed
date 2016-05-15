@@ -8,7 +8,14 @@ System.config({
     },
     paths: {
         "github:*": "jspm_packages/github/*",
-        "npm:*": "jspm_packages/npm/*"
+        "npm:*": "jspm_packages/npm/*",
+        "app/*": "app/*.ts"
+    },
+
+    packages: {
+        app: {
+            defaultExtension: 'ts'
+        }
     },
 
     map: {
