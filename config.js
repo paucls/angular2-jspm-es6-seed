@@ -22,6 +22,7 @@ System.config({
         "angular2": "npm:angular2@2.0.0-beta.17",
         "@angular": "npm:angular2@2.0.0-beta.17",
         '@angular2-material': 'node_modules/@angular2-material',
+        "lodash": 'node_modules/lodash/lodash.js',
         "crypto": "github:jspm/nodelibs-crypto@0.1.0",
         "es6-shim": "github:es-shims/es6-shim@0.35.1",
         "reflect-metadata": "npm:reflect-metadata@0.1.3",
