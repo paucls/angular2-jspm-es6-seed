@@ -1,9 +1,11 @@
 <html>
 <head>
     <title>Demo App</title>
-    <!-- systemJS loader and config -->
+
+    <!-- build:js -->
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
+    <!-- endbuild -->
 </head>
 <body>
 <!-- our angular2 component -->
@@ -11,9 +13,10 @@
     Loading...
 </test-app>
 
-<!-- import and run our app -->
+<!-- build:system -->
 <script>
     System.import('app/app');
 </script>
+<!-- endbuild -->
 </body>
 </html>
