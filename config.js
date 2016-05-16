@@ -15,6 +15,9 @@ System.config({
     packages: {
         app: {
             defaultExtension: 'ts'
+        },
+        'base/app': {
+            defaultExtension: 'ts'
         }
     },
 
