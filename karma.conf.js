@@ -7,7 +7,8 @@ module.exports = function (config) {
             'node_modules/phantomjs-polyfill/bind-polyfill.js',
             'node_modules/es6-shim/es6-shim.js',
             'jspm_packages/system-polyfills.js',
-            'jspm_packages/npm/reflect-metadata@0.1.3/Reflect.js'
+            'jspm_packages/npm/reflect-metadata@0.1.3/Reflect.js',
+            {pattern: 'app/**/*.ts', included: false}
         ],
 
         jspm: {

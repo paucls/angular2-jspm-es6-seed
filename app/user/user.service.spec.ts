@@ -6,7 +6,7 @@ describe('TestService', () => {
         this.userService = new UserService();
     });
 
-    it('should have name property set', () => {
+    it('should have correct username', () => {
         expect(this.userService.getUsername()).toBe('Test User');
     });
 
