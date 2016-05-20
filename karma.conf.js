@@ -4,7 +4,10 @@ module.exports = function (config) {
     config.set({
 
         files: [
-            './node_modules/phantomjs-polyfill/bind-polyfill.js'
+            'node_modules/phantomjs-polyfill/bind-polyfill.js',
+            'node_modules/es6-shim/es6-shim.js',
+            'jspm_packages/system-polyfills.js',
+            'jspm_packages/npm/reflect-metadata@0.1.3/Reflect.js'
         ],
 
         jspm: {

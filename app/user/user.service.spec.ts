@@ -7,7 +7,7 @@ describe('TestService', () => {
     });
 
     it('should have name property set', () => {
-        expect(this.userService.getUsername()).toBe('Injected Service');
+        expect(this.userService.getUsername()).toBe('Test User');
     });
 
 });
