@@ -27,3 +27,11 @@ To build the application run the command below
 
 This will create a dist folder with the minified distribution files. To run open dist/index.html in a browser
 
+## Testing
+To run the tests use the command below
+
+    gulp karma
+
+If you require watching of files as you are developing run the command below
+
+    gulp karma -w

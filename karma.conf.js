@@ -37,8 +37,6 @@ module.exports = function (config) {
 
         phantomjsLauncher: {
             exitOnResourceError: true
-        },
-
-        logLevel: config.LOG_DEBUG
+        }
     });
 };
