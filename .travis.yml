@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - '5'
+
+install:
+  - npm i
+  - npm i -g jspm
+  - jspm i
+
+cache:
+  directories:
+    - node_modules
+    - jspm_packages
+
+after_script:
+  - gulp karma

@@ -1,5 +1,5 @@
 System.config({
-    baseURL: "./",
+    baseURL: window.__karma__ ? "base" : "./",
     defaultJSExtensions: true,
     transpiler: "typescript",
     typescriptOptions: {
@@ -14,6 +14,9 @@ System.config({
 
     packages: {
         app: {
+            defaultExtension: 'ts'
+        },
+        'base/app': {
             defaultExtension: 'ts'
         }
     },
