@@ -1,14 +1,14 @@
 'use strict';
 
-module.exports = function (gulp, $, config) {
+module.exports = (gulp, $) => {
 
     gulp.task(karma);
 
     function karma(done) {
-        var Server = require('karma').Server;
-        var watch = $.util.env.watch || $.util.env.w;
+        let Server = require('karma').Server;
+        let watch = $.util.env.watch || $.util.env.w;
 
-        var Growl = require('node-notifier/notifiers/growl');
+        let Growl = require('node-notifier/notifiers/growl');
 
         new Server({
             configFile: `${__dirname}/../karma.conf.js`,

@@ -3,7 +3,7 @@
  */
 'use strict';
 
-module.exports = function (gulp) {
+module.exports = (gulp) => {
 
     gulp.task('dist', gulp.parallel('index', 'templates', 'jspm'));
 

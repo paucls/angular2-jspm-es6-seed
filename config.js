@@ -1,5 +1,5 @@
 System.config({
-    baseURL: window.__karma__ ? "base" : "./",
+    baseURL: (typeof(window) !== 'undefined' ? window: {}).__karma__ ? "base" : "./",
     defaultJSExtensions: true,
     transpiler: "typescript",
     typescriptOptions: {
