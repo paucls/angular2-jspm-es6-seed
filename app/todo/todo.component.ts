@@ -2,12 +2,15 @@ import {Component} from 'angular2/core';
 import {MdInput} from '@angular2-material/input';
 import {MdList} from '@angular2-material/list';
 import {MdButton} from '@angular2-material/button';
+import {MdCard} from '@angular2-material/card';
+import {MdIcon} from '@angular2-material/icon';
 import {remove} from 'lodash';
 
 @Component({
     selector: 'tr-todo-list',
-    directives: [MdInput, MdList, MdButton],
-    templateUrl: 'app/todo/todo-list.html'
+    directives: [MdInput, MdList, MdButton, MdCard, MdIcon],
+    templateUrl: 'app/todo/todo-list.html',
+    styleUrls: ['app/todo/todo.component.css']
 })
 export class TrTodoList {
 
