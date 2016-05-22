@@ -3,7 +3,11 @@
 var gulp = require('gulp'),
     packageJson = require('./package.json'),
     plugins = require('gulp-load-plugins')({
-        pattern: ['gulp-*', 'gulp.*'],
+        pattern: [
+            'gulp-*',
+            'gulp.*',
+            'browser-sync'
+        ],
         lazy: true
     });
 
