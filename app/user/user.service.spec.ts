@@ -1,7 +1,7 @@
 import {UserService} from './user.service';
 
 describe('TestService', () => {
-
+    
     beforeEach(() => {
         this.userService = new UserService();
     });

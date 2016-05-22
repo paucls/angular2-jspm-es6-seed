@@ -17,15 +17,13 @@ Install the jspm packages
 
     jspm install
 
-Open the index.html file in a browser
+## Running
 
-## Distributing
+To run the project use the command below
 
-To build the application run the command below
+    gulp
 
-    gulp dist
-
-This will create a dist folder with the minified distribution files. To run open dist/index.html in a browser
+This will build everything and watch for changes. A browser should open at the address http://localhost:3000
 
 ## Testing
 To run the tests use the command below
