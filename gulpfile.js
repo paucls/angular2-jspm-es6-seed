@@ -6,7 +6,8 @@ var gulp = require('gulp'),
         pattern: [
             'gulp-*',
             'gulp.*',
-            'browser-sync'
+            'browser-sync',
+            'del'
         ],
         lazy: true
     });

@@ -4,7 +4,7 @@ module.exports = (gulp) => {
 
     gulp.task(watch);
 
-    gulp.task('dist', gulp.parallel('index', 'templates', 'jspm'));
+    gulp.task('dist', gulp.series('clean', gulp.parallel('index', 'templates', 'sass', 'jspm')));
 
     gulp.task('default', gulp.series('dist', gulp.parallel('watch', 'server')));
 
@@ -23,6 +23,11 @@ module.exports = (gulp) => {
         gulp.watch([
                 'app/**/*.html'
             ], gulp.series('templates')
+        );
+
+        gulp.watch([
+                'app/**/*.scss'
+            ], gulp.series('sass')
         );
     }
 

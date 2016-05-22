@@ -4,3 +4,4 @@ jspm_packages
 .idea
 dist
 test_results
+npm-debug.log
