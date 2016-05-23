@@ -7,15 +7,15 @@ module.exports = (gulp, $) => {
     function server() {
         $.browserSync({
             server: {
-                baseDir: 'dist',
-                index: 'index.html',
-                open: 'www.google.com'
+                baseDir: './',
+                index: 'index.html'
                 //middleware: [require('connect-history-api-fallback')]
             },
             files: [
-                'dist/**/*.css',
-                'dist/**/*.js',
-                'dist/**/*.html'
+                'app/**/*.css',
+                'app/**/*.ts',
+                'app/**/*.html',
+                'index.html'
             ]
         });
     }

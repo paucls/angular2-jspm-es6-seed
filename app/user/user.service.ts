@@ -6,7 +6,7 @@ export class UserService {
     username:string;
     
     constructor() {
-        this.username = 'Test User';
+        this.username = 'Test User SuperDude';
     }
 
     getUsername() {

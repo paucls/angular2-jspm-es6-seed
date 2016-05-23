@@ -11,6 +11,6 @@ module.exports = (gulp, $) => {
                 browsers: ['last 2 versions', '> 5%'],
                 cascade: false
             }))
-            .pipe(gulp.dest('./dist/app'));
+            .pipe(gulp.dest('./app'));
     }
 };
