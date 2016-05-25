@@ -50,6 +50,7 @@
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-tslint": "^5.0.0",
+    "gulp-tslint-stylish": "^1.1.1",
     "gulp-util": "^3.0.7",
     "isparta": "^4.0.0",
     "istanbul": "git+http://github.com/gotwarlost/istanbul/#source-map",
@@ -66,6 +67,7 @@
     "node-notifier": "^4.5.0",
     "phantomjs": "2.1.7",
     "phantomjs-polyfill": "0.0.2",
-    "require-directory": "^2.1.1"
+    "require-directory": "^2.1.1",
+    "tslint": "^3.10.2"
   }
 }

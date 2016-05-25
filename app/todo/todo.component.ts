@@ -14,7 +14,7 @@ import {remove} from 'lodash';
 })
 export class TrTodoList {
 
-    items:any[];
+    items: any[];
 
     constructor() {
         this.items = [];

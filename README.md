@@ -1,5 +1,7 @@
 # angular2-jspm-es6-seed
 
+[![Build Status](https://travis-ci.org/el-davo/angular2-jspm-es6-seed.svg?branch=feature%2Fadd-typescript-linter)](https://travis-ci.org/el-davo/angular2-jspm-es6-seed)
+
 ## Getting Started
 Clone the repo
 
