@@ -19,11 +19,11 @@ Install the jspm packages
 
 ## Running
 
-To run the project use the command below
+To run the project in development mode use the command below
 
     gulp
 
-This will build everything and watch for changes. A browser should open at the address http://localhost:3000
+This command will watch for changes and reload the browser automagically
 
 ## Testing
 To run the tests use the command below
