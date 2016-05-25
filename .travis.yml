@@ -14,3 +14,4 @@ cache:
 
 after_script:
   - gulp karma
+  - gulp tslint
