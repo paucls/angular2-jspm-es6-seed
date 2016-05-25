@@ -4,9 +4,9 @@ import {Injectable} from '@angular/core';
 export class UserService {
 
     username:string;
-    
+
     constructor() {
-        this.username = 'Test User SuperDude';
+        this.username = 'Test User';
     }
 
     getUsername() {

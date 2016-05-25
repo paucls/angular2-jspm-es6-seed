@@ -4,7 +4,7 @@ module.exports = (gulp) => {
 
     gulp.task(watch);
 
-    gulp.task('dist', gulp.series('clean', gulp.parallel('index', 'templates', 'sass', 'jspm')));
+    gulp.task('dist', gulp.series('clean', gulp.parallel('index', 'templates', 'sassDist', 'jspm')));
 
     gulp.task('default', gulp.series('sass', gulp.parallel('watch', 'server')));
 
