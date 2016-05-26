@@ -13,6 +13,11 @@ module.exports = (gulp) => {
                 'app/**/*.scss'
             ], gulp.series('sass')
         );
+
+        gulp.watch([
+                'app/**/*.ts'
+            ], gulp.series('tslint')
+        );
     }
 
 };

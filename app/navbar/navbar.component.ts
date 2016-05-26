@@ -11,9 +11,9 @@ import {UserService} from '../user/user.service';
 })
 export class TrNav {
 
-    username:string;
+    username: string;
 
-    constructor(private userService:UserService) {
+    constructor(private userService: UserService) {
         this.username = userService.getUsername();
     }
 }
