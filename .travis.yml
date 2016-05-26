@@ -8,6 +8,7 @@ install:
 - npm i
 - npm i -g jspm
 - jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+- jspm registry export github
 - jspm i
 cache:
   directories:
