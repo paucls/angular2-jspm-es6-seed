@@ -1,21 +1,18 @@
 env:
   global:
-  - secure: XHEwuQ5hRkr+CaqRkFlOsUvzNDW3UsYEAqSYhCfmf0s3CbrOMU0Ic4wGCCxYuepo4yR3sgwda76T4M7TpizfhKSL/9M16FpbX5RJGeeun6QfkSuEqSnM1cxQWvjUXb6vuoecPfjsHI1833hu3JpWHgEOELTV8/osJT3SO6OSZ5NOKN9Nshin6QD80CkVbFjVmLdWjfhAu8+O1unkfyzyLRgUjOVE35rjD7e9ZW5Cp/NQSZ9FXqtM6WWG6A9kdW/ncQzGjn01ZpG/P7vMv5aQ8rpHTQ5mFlpDKhOV0jx3rpNU7Mze7cson4iWZxIuR3vnpuFiHX2cxdx/Zk/ne+36fwA9LQKscpPOEITh7w93qPRXMD5EHfplhWAvCgVeI6s9clXhK1y5RMYn0GWfX1eb77P9dVEji7zF1XZV7ILyvGgQZzrIojU9Xmq2rPxPNEJmUPOXD7u4+520nDj+r0p6lDiU8UDKrU3mYMh/LlL87RC6g1ZXalwGJCb2hHexLKvdFOQUU71eqb6PpZK6rG366sUGIaDvJNd7Jt+dmo5oXwgSvriNvYGxfVtLLQvdO/fLlZKPSsL6xP69xi3DMv0qstTQ6wgId/bQqOdoGtKo0iLuQWUjNZypttAs0liPRS8pC2qvZL2T00gQo2TG4zh6NTz7k1WECTCr4+3eXKYi6SQ=
+    secure: zDr/luk9Ps70rkrhp/2iME2dQvabG0/Ny03Qrnt7G5/RS51fR8bWrSfZjvVQsubvOz8MX+JAY0gRpAXMDFm1WJWNpEqsNIj80p4V6YFRU/hKS/00bTE5nTpoqqK5UYXk0Ts1uIK04GmIeuuHaepteY1gvDif42JwuvDpi4gAIADSC0txZdwzus8Hlm1DjZYPbGvB9aKxWB9fklK4EBsBE+brP+jFA88eYWnzGWvTt9X0sKF5KmnkKzoXCJHYzjGsywh5jeKOgtSujWzJSUvhAX6mnUUfN5+44dCLNZYya21zNI4uUyEC8C9BDX32qZ+LCpEO1TF5ddLoCuir4h76D7KNHpq03z09/aiObaey5ofRNbYH7W7Qm0owwwE7dzrBvhpsOTsrc8h4OxZ0XueqtT1JSV4Ma5YP1evqueJOpzL+B5/rgs5Se+eVHIE0oQHUNUN+fC4DxlbsQF7h6Al6MRll/FasTB2MaxVkfeDgSAjJXp8g8n7kLLSKZFH+8+ANnwAQeC3gKxSlGnJ7sSXv3HAfssR6u+DiZwRCOG49QHgbRoJzRJ/rGhZBHlxCIXX/motxjaycAXz5W/dU1J1xTAr5PVjsDdAUN5v1Dt2BPs0A1Mi8kXU+aKf+8NEg1g5GOoTyI6D3hM8+WrGc1WUk05nY0wsm8eEq+Y+5mvAvPWQ=
 language: node_js
 node_js:
-  - '5'
-
+- '5'
 install:
-  - npm i
-  - npm i -g jspm
-  - jspm config registries.github.auth JSPM_GITHUB_AUTH_TOKEN
-  - jspm i
-
+- npm i
+- npm i -g jspm
+- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+- jspm i
 cache:
   directories:
-    - node_modules
-    - jspm_packages
-
+  - node_modules
+  - jspm_packages
 after_script:
-  - gulp karma
-  - gulp tslint
+- gulp karma
+- gulp tslint
