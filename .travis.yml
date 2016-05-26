@@ -8,6 +8,7 @@ node_js:
 install:
   - npm i
   - npm i -g jspm
+  - jspm config registries.github.auth JSPM_GITHUB_AUTH_TOKEN
   - jspm i
 
 cache:
